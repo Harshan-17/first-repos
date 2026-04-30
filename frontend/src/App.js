@@ -84,8 +84,14 @@ const LoginView = ({ onLogin }) => {
 
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: 48 }}>
         <div style={{ width: "100%", maxWidth: 760 }}>
-          <h2 style={{ fontSize: 64, marginBottom: 8, color: "#0f172a" }}>Welcome Back</h2>
-          <p style={{ fontSize: 36, color: "#475569", marginTop: 0 }}>Login to access your healthcare portal</p>
+          <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 14 }}>
+            <div style={{ width: 58, height: 58, borderRadius: "50%", background: "#dbe4ef", color: "#0f4a8a", display: "grid", placeItems: "center", fontWeight: 800, fontSize: 26 }}>RK</div>
+            <div>
+              <h2 style={{ fontSize: 52, margin: 0, color: "#0f172a" }}>Patient Login</h2>
+              <p style={{ fontSize: 30, color: "#475569", margin: "4px 0 0" }}>Diabetes + hypertension</p>
+            </div>
+          </div>
+          <p style={{ fontSize: 30, color: "#475569", marginTop: 0 }}>Login to access your healthcare portal</p>
 
           <div style={{ background: "#e5e7eb", borderRadius: 999, display: "flex", padding: 8, marginTop: 24 }}>
             <button style={portalButton(role === "patient")} onClick={() => pickRole("patient")}>Patient Login</button>
